@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="Dashboard Login"
+    errors="0" failures="0" hostname="" id="" package="Dashboard Login" skipped="0"
+    tests="1" time="22.85" timestamp="">
+  
+    <testcase name="Dashboard Login" classname="Dashboard Login" time="22.85" assertions="15">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="1">
+
+  <testsuite name="Dashboard Login"
+    errors="0" failures="1" hostname="" id="" package="Dashboard Login" skipped="0"
+    tests="1" time="16.27" timestamp="">
+  
+    <testcase name="Dashboard Login" classname="Dashboard Login" time="16.27" assertions="12">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+      <failure message="Testing if element &lt;.text-red&gt; contains text: &#34;kriti+beta@kaodim.com&#34;. Element could not be located. - expected [0;32m&#34;kriti+beta@kaodim.com&#34;[0m but got: [0;31m&#34;null&#34;[0m">    at Object.Dashboard Login (/Users/sahilchaddha/Projects/Automation/Login/src/Dashboard Login.js:21:26)</failure>
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>

@@ -1,0 +1,51 @@
+{
+    "src_folders" : ["src"],
+    "output_folder" : "reports",
+    "custom_commands_path" : "",
+    "custom_assertions_path" : "",
+    "page_objects_path" : ["./PageObjectModel/"],
+    "globals_path" : "",
+  
+    "selenium" : {
+      "start_process" : true,
+      "server_path" : "./bin/selenium.jar",
+      "log_path" : "",
+      "port" : 4444,
+      "cli_args" : {
+        "webdriver.chrome.driver" : "./bin/drivers/chromedriver",
+        "webdriver.gecko.driver" : "./bin/drivers/geckodriver"
+      }
+    },
+  
+    "test_settings" : {
+      "default" : {
+        "launch_url" : "https://dashboard.beta.kaodim.com",
+        "selenium_port"  : 4444,
+        "selenium_host"  : "localhost",
+        "silent": true,
+        "screenshots" : {
+          "enabled" : false,
+          "path" : ""
+        },
+        "desiredCapabilities": {
+          "browserName": "firefox",
+          "marionette": true
+        }
+      },
+  
+      "chrome" : {
+        "desiredCapabilities": {
+          "browserName": "chrome",
+          "chromeOptions": {
+            "args": ["headless", "disable-gpu"]
+          }
+        }
+      },
+  
+      "edge" : {
+        "desiredCapabilities": {
+          "browserName": "MicrosoftEdge"
+        }
+      }
+    }
+  }
