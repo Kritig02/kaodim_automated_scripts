@@ -30,7 +30,7 @@ jobs:
       - run: sudo rm -rf /var/lib/apt/lists/*
       - run: sudo apt-get update
       - run: sudo apt install -t jessie-backports  openjdk-8-jre-headless ca-certificates-java
-      - run: java -jar bin/selenium.jar
+      - run: nohup java -jar bin/selenium.jar
       - run: npm install
 
       - save_cache:
