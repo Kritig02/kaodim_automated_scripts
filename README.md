@@ -1,5 +1,7 @@
 # Kaodim Automated Test Scripts
 
+[![CircleCI](https://circleci.com/gh/Kritig02/kaodim_automated_scripts.svg?style=svg)](https://circleci.com/gh/Kritig02/kaodim_automated_scripts)
+
 Supported Browsers : 
 1. Chrome (Headless)
 2. Firefox (Gecko)
