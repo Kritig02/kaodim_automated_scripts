@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/node:7.10.0-browsers
+      - image: circleci/node:node-jessie-browsers
       
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -30,7 +30,10 @@ jobs:
       - run: sudo rm -rf /var/lib/apt/lists/*
       - run: sudo apt-get update
       - run: sudo apt install -t jessie-backports  openjdk-8-jre-headless ca-certificates-java
-      - run: nohup java -jar bin/selenium.jar
+      - run:
+          name: Start Selenium
+          command: java -jar bin/selenium.jar
+          background: true
       - run: npm install
 
       - save_cache:
