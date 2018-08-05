@@ -17,7 +17,7 @@ module.exports = {
         loginPage.assert.elementPresent('@signupAsUser')
         loginPage.setValue('@email', env.loginInfo.username)
         .clickNext()
-        browser.pause(10000)
+        browser.pause(5000)
         loginPage.assert.containsText('.text-red',env.compareData.email)
         loginPage.assert.elementPresent('@resetPassword')
         loginPage.setValue('@password', env.loginInfo.password).submitPassword();
