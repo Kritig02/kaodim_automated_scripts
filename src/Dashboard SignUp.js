@@ -23,7 +23,7 @@ module.exports = {
         signUpPage.setValue('@phone', util.rNum()),
         signUpPage.setValue('@password', 'notasecret')
         .clickSignUp()
-        browser.pause(2000)
+        browser.pause(5000)
         browser.saveScreenshot(env.screenshotsDir + displayName + '.png')
         signUpPage.assert.containsText('span[class=info-name]',displayName)
         browser
