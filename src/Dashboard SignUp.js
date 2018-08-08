@@ -19,7 +19,7 @@ module.exports = {
         signUpPage.assert.elementPresent('@termOfUse')
         signUpPage.assert.elementPresent('@phone')
         signUpPage.setValue('@name', displayName),
-        signUpPage.setValue('@email',util.rChar()+'@kaodim.com'),
+        signUpPage.setValue('@email',displayName+'@kaodim.com'),
         signUpPage.setValue('@phone', util.rNum()),
         signUpPage.setValue('@password', 'notasecret')
         .clickSignUp()
