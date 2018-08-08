@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf reports",
-    "test": "npm run chromeHeadless",
+    "test": "npm run chromeHeadless && npm run exit",
     "firefox": "npm run clean && node_modules/.bin/nightwatch",
     "chromeHeadless": "npm run clean && node_modules/.bin/nightwatch --env chromeHeadless",
     "chrome": "npm run clean && node_modules/.bin/nightwatch --env chrome",
-    "upload": "aws s3 cp reports/test_report.html s3://kriti-automation/index.html"
+    "upload": "aws s3 cp reports/test_report.html s3://kriti-automation/index.html",
+    "exit": "exit 0"
   },
   "author": "Kriti Gupta",
   "license": "ISC",
