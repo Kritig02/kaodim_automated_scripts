@@ -4,7 +4,7 @@
     "custom_commands_path" : "",
     "custom_assertions_path" : "",
     "page_objects_path" : ["./PageObjectModel/"],
-    "globals_path" : "",
+    "globals_path" : "./globals.js",
   
     "selenium" : {
       "start_process" : true,
@@ -24,8 +24,10 @@
         "selenium_host"  : "localhost",
         "silent": true,
         "screenshots" : {
-          "enabled" : false,
-          "path" : ""
+          "enabled" : true,
+          "path" : "reports/",
+          "on_failure": true,
+          "on_error": true
         },
         "desiredCapabilities": {
           "browserName": "firefox",
@@ -33,12 +35,18 @@
         }
       },
   
-      "chrome" : {
+      "chromeHeadless" : {
         "desiredCapabilities": {
           "browserName": "chrome",
           "chromeOptions": {
             "args": ["headless", "disable-gpu"]
           }
+        }
+      },
+
+      "chrome" : {
+        "desiredCapabilities": {
+          "browserName": "chrome"
         }
       },
   

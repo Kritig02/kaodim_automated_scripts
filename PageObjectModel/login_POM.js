@@ -3,6 +3,7 @@
 var choseCountry = '/html/body/div[4]/div/div/header/nav/ul/li[4]/div/div/select/';
 var choseServiceGroup = '/html/body/div[4]/div/div/header/nav/ul/li[1]/ul';
 
+//To Be Implemented
 var changeCountry = {
     countryIsClicked : function(country_name){
         var self = this;
@@ -45,6 +46,7 @@ var submitNext = {
         return this;
     }
 }
+// To Be Implemented
 var selectService ={
     clickService : function(clickedService){
         var self = this;
